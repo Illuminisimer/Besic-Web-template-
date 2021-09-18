@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="tab.png">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>
+        CourseHub - About
+    </title>
+</head>
+<body>
+
+<div class="load">
+    <div class="ring">
+        Loading
+        <span></span>
+    </div>
+</div>
+
+<script>
+    $(window).on("load", function() {
+        $(".load").fadeOut('slow');
+    });
+</script>
+
+<header>
+    <div class="logo">
+        <a href="Index.html">
+            <img src="logo.png" height="85px" width="250 px" style="margin-left : 15px;">
+        </a>
+
+        <ul class="info">
+            <li class="active"><a href="Index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Our Courses.html">OUR COURSES</a></li>
+            <li><a href="Gallery.html">GALLERY</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="Contact.html">CONTACT US</a></li>
+            <li><a href="Error.html">ERROR</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="image">
+    <center>
+        <div class="text">
+            <h1>Find your course</h1>
+            <h3>Over 10,000 courses are available</h3>
+        </div>
+
+        <div class="search-box">
+
+            <input type="text" placeholder="Keyword search">
+            <select class="courses">
+                <option>Course Category</option>
+                <option>Web Design</option>
+                <option>Web Development</option>
+                <option>App Design</option>
+                <option>App Development</option>
+                <option>Graphics Design</option>
+                <option>Artificial Intelligence</option>
+            </select>
+
+            <select>
+                <option>Your Region</option>
+                <option>United States</option>
+                <option>Europe</option>
+                <option>Australia</option>
+                <option>Asia</option>
+                <option>Africa</option>
+                <option>Antarctica</option>
+            </select>
+            <button class="btn-common">Search</button>
+        </div>
+    </center>
+</div>
+
+<div class="course_summery">
+    <h1>
+        Our Features
+        <center><div class="line"></div></center>
+    </h1>
+
+    <div class="summery">
+
+        <div class="course">
+            <div class="summery_image">
+                <img src="data:image/png;base64,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">
+            </div>
+            <h3>Improve your skills</h3>
+            <p>Ensure improvement of your skills to develop your career.</p>
+        </div>
+
+        <div class="course">
+            <div class="summery_image">
+                <img src="data:image/png;base64,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">
+            </div>
+            <h3>Achieve your dreams</h3>
+            <p>Learn the latest skills to move forward for achieving your dreams.</p>
+        </div>
+
+        <div class="course">
+            <div class="summery_image">
+                <img src="data:image/png;base64,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">
+            </div>
+            <h3>Get valid certificates</h3>
+            <p>Get a valid certificate from Universities, Business Fields and Top Ranking Organizations and Companies after every course.</p>
+        </div>
+    </div>
+</div>
+
+<div class="join">
+    <h1>Join Us</h1>
+    <center><div class="u_line"></div></center>
+    <h3>Subscribe to our team and be a part of the family.</h3>
+    <div class="sub">
+        <div class="search">
+            <form>
+            <input type="email" class="input" placeholder="Your Email" required>
+            <button class="btn" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="contact_us">
+    <div class="contact">
+        <h1>
+            Get in touch with us
+            <center>
+                <div class="under_line"></div>
+            </center>
+        </h1>
+        <div class="row">
+            <div class="column">
+                <form class="form">
+                    <div class="group">
+                        <input type="text" class="control" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="group">
+                        <input type="text" class="control" placeholder="Your Phone Number" required>
+                    </div>
+
+                    <div class="group">
+                        <input type="email" class="control" placeholder="Your Email" required>
+                    </div>
+
+                    <div class="group">
+                        <input type="text" class="control" placeholder="Your Address" required>
+                    </div>
+
+                    <div class="group">
+                        <input type="text" class="control" placeholder="Your Region" required>
+                    </div>
+
+                    <div class="group">
+                        <textarea class="comment" rows="4" placeholder="Type your comment"></textarea>
+                    </div>
+                    <button type="submit" class="submit">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="inner_footer">
+        <div class="logo_container">
+            <img src="logo.png">
+        </div>
+
+        <div class="footer_third">
+            <h1>Quick Links</h1>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">License</a>
+            <a href="#">Portfolio</a>
+        </div>
+
+        <div class="footer_third">
+            <h1>Contact Us</h1>
+            <a href="#"><i class="fas fa-envelope">&nbsp;&nbsp;Email : <br>123_example@gmail.com</i></a>
+            <a href="#"><i class="fas fa-phone-alt">&nbsp;&nbsp;Cell : <br>(+88) 111 555 666</i></a>
+            <a href="#"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;Address : <br>40 Baria Sreet 133/2 NewYork City, US</i></a>
+        </div>
+
+        <div class="footer_third">
+            <h1>Follow Us</h1>
+            <a href="#"><i class="fab fa-facebook">&nbsp;&nbsp;Facebook</i></a>
+            <a href="#"><i class="fab fa-instagram-square">&nbsp;&nbsp;Instagram</i></a>
+            <a href="#"><i class="fab fa-twitter">&nbsp;&nbsp;Twitter</i></a>
+            <a href="#"><i class="fab fa-linkedin-in">&nbsp;&nbsp;LinkedIn</i></a>
+        </div>
+
+        <div class="footer_third">
+            <h1>Need Help?</h1>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+
+<div class="scroll_up">
+    <a id="scrollUp" href="#top" style="position : fixed; z-index : 2147483647;"><i class="fa fa-angle-up"></i></a>
+</div>
+
+<div class="end">
+    <p>Copyright 2020 CourseHub - All Rights Reserved</p>
+</div>
+</body>
+</html>
